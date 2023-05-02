@@ -29,21 +29,21 @@ const MobileMenu: FC<MobileMenuProps> = ({ setOpenMenu }) => {
                  
                 </li>
                 <li onClick={()=>{setOpenMenu(false)}} className='relative underline-hover-effect'>
-                    <Link to="/">
+                    <Link to="/menu">
                         {t('navbar.menu')}
 
                     </Link>
                  
                 </li>
                 <li onClick={()=>{setOpenMenu(false)}} className='relative underline-hover-effect'>
-                    <Link to="/">
+                    <Link to="/reserve">
                         {t('navbar.reserve')}
 
                     </Link>
                   
                 </li>
                 <li onClick={()=>{setOpenMenu(false)}} className='relative underline-hover-effect'>
-                    <Link to="/">
+                    <Link to="/access">
                         {t('navbar.access')}
 
                     </Link>

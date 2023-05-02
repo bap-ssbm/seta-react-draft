@@ -41,7 +41,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
                
             <motion.div
 
-                className='max-h-[40px]'>
+                className='max-h-[40px] max-w-[60%]'>
                 <motion.img
 
                     src='/images/logo.png' />
