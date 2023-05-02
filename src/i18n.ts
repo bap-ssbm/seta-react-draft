@@ -8,6 +8,7 @@ import menu from './i18n/locales/Home/MenuSection.json'
 import access from './i18n/locales/Home/Access.json'
 import navbar from './i18n/locales/Navbar.json'
 import footer from './i18n/locales/Footer.json'
+import realmenu from './i18n/locales/Menu.json'
 
 
 i18n
@@ -39,6 +40,9 @@ i18n
                     },
                     footer:{
                         ...footer.en
+                    },
+                    menu:{
+                        ...realmenu.en
                     }
                 }
             },
@@ -56,6 +60,9 @@ i18n
                     },
                     footer:{
                         ...footer.ja
+                    },
+                    menu:{
+                        ...realmenu.ja
                     }
                 }
             }

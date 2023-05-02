@@ -9,7 +9,6 @@ const Appeal: FC<AppealProps> = ({ }) => {
     return (
         <div className='w-full'>
             <Hayama/>
-
         </div>)
 }
 

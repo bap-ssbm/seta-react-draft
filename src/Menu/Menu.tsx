@@ -1,111 +1,114 @@
 import { FC } from 'react'
+import { useTranslation } from 'react-i18next';
 
 interface MenuProps {
 
 }
 
 const Menu: FC<MenuProps> = ({ }) => {
+    const { t } = useTranslation();
     return (
         <div className='flex-grow p-[5%] pb-56 text-center flex flex-col gap-10 relative'>
-            <h1 className='text-[23px] italic underline tracking-[2px] mb-5 py-16'>
+            <h1 className='text-[23px] italic underline tracking-[2px]'>
                 Menu
             </h1>
-            <hr />
+          
             <div className='flex flex-col gap-56'>
                 <div className='mt-10'>
                     <h2 className='font-semibold mb-10'>
-                        A コース<br />3,200円
+                        {t('menu.a.title')}<br />{t('menu.a.price')}
                         <br />
-                        ( 税込、サービス料なし )
+                        {t('menu.warning')}
                     </h2>
                     <p>
-
-
-                        一口オードブル
+                        {t('menu.course.amuse')}
                         <br />
-                        前菜（魚介のマリネ）
-
-                        <br />本日の魚料理 または 豚ロース肉グリル
-                        <br />デザート（３種類からお選び）<br />
-                        コーヒーまたは紅茶
+                        {t('menu.a.appetizer')}
+                        <br />
+                        {t('menu.a.main')}
+                        <br />
+                        {t('menu.course.dessert')}
+                        <br />
+                        {t('menu.course.drink')}
                     </p>
                 </div>
 
                 <div>
                     <h2 className='font-semibold mb-10'>
-                        B コース <br /> 4,300
+                        {t('menu.b.title')}<br />{t('menu.b.price')}
                         <br />
-                        ( 税込、サービス料なし )
+                        {t('menu.warning')}
                     </h2>
                     <p>
-
-
-                        一口オードブル
+                        {t('menu.course.amuse')}
                         <br />
-                        前菜（魚介のマリネ）
+                        {t('menu.b.appetizer')}
                         <br />
-                        季節のスープ／本日の魚料理 または 牛ホホ肉の赤ワイン煮
-                        <br />デザート（３種類からお選び）
-                        <br />コーヒーまたは紅茶
+                        {t('menu.course.dessert')}
+                        <br />
+                        {t('menu.b.soup')}
+                        <br />
+                        {t('menu.b.main')}
+                        <br />
+                        {t('menu.course.dessert')}
+                        <br />
+                        {t('menu.course.drink')}
                     </p>
                 </div>
                 <div>
                     <h2 className='font-semibold mb-10'>
-                        C コース
+                        {t('menu.c.title')}<br />{t('menu.c.price')}
                         <br />
-                        6,400円
-                        <br />
-                        ( 税込、サービス料なし )
+                        {t('menu.warning')}
                     </h2>
                     <p>
-
-
-                        一口オードブル
+                        {t('menu.course.amuse')}
                         <br />
-                        前菜（魚介のマリネ）
+                        {t('menu.c.appetizer')}
                         <br />
-                        本日のスープ
-                        <br />季節の魚料理
-                        <br />肉料理（牛頬肉赤ワイン煮 または 和牛ヒレステーキ+1,880円
-                        <br />信州安曇野そば
-                        <br />デザート（３種類からお選び）<br />
-                        コーヒーまたは紅茶
+                        {t('menu.c.soup')}
+                        <br />
+                        {t('menu.c.seafood')}
+                        <br />
+                        {t('menu.c.main')}
+                        <br />
+                        {t('menu.c.soba')}
+                        <br />
+                        {t('menu.course.dessert')}
+                        <br />
+                        {t('menu.course.drink')}
                     </p>
                 </div>
                 <div>
                     <h2 className='font-semibold mb-10'>
-                        ランチセット
-
-                        <br />1,800円
+                        {t('menu.lunch.title')}<br />{t('menu.lunch.price')}
                         <br />
-                        (税込、サービス料なし)
+                        {t('menu.warning')}
                     </h2>
                     <p>
-
-
-                        カップスープ
+                        {t('menu.lunch.soup')}
                         <br />
-                        季節野菜のミニサラダ
+                        {t('menu.lunch.salad')}
                         <br />
-                        メイン料理お選び
+                        {t('menu.lunch.mainTitle')}
                         <br />
-                        （ロールキャベツのトマトソースグラタン・本日の魚料理・鶏肉のきのこクリーム煮）
+                        {t('menu.lunch.main')}
                         <br />
-                        季節のシャーベット
+                        {t('menu.lunch.sorbet')}
                     </p>
                 </div>
             </div>
-            
+
             <div className='absolute opacity-10 right-0 top-[40%]'>
-                <img height={700} width={700} className='' src='/images/１３.jpg'/>
+                <img height={700} width={700} className='' src='/images/１３.jpg' />
             </div>
             <div className='absolute opacity-10 top-[13%]'>
-                <img height={700} width={700} className='' src='/images/3.jpg'/>
+                <img height={700} width={700} className='' src='/images/3.jpg' />
             </div>
             <div className='absolute opacity-10 bottom-[13%]'>
-                <img height={700} width={700} className='' src='/images/8.jpg'/>
+                <img height={700} width={700} className='' src='/images/8.jpg' />
             </div>
-            
+
         </div>)
 }
 
