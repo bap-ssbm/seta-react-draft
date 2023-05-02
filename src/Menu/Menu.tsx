@@ -99,10 +99,10 @@ const Menu: FC<MenuProps> = ({ }) => {
             <div className='absolute opacity-10 right-0 top-[40%]'>
                 <img height={700} width={700} className='' src='/images/１３.jpg'/>
             </div>
-            <div className='absolute opacity-10 top-20'>
+            <div className='absolute opacity-10 top-[13%]'>
                 <img height={700} width={700} className='' src='/images/3.jpg'/>
             </div>
-            <div className='absolute opacity-10 bottom-6'>
+            <div className='absolute opacity-10 bottom-[13%]'>
                 <img height={700} width={700} className='' src='/images/8.jpg'/>
             </div>
             
