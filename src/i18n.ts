@@ -9,7 +9,8 @@ import access from './i18n/locales/Home/Access.json'
 import navbar from './i18n/locales/Navbar.json'
 import footer from './i18n/locales/Footer.json'
 import realmenu from './i18n/locales/Menu.json'
-
+import reservationPage from './i18n/locales/ReservationPage.json'
+import { m } from 'framer-motion';
 
 i18n
     // detect user language
@@ -43,6 +44,9 @@ i18n
                     },
                     menu:{
                         ...realmenu.en
+                    },
+                    reservationPage:{
+                        ...reservationPage.en
                     }
                 }
             },
@@ -63,6 +67,9 @@ i18n
                     },
                     menu:{
                         ...realmenu.ja
+                    },
+                    reservationPage:{
+                        ...reservationPage.ja
                     }
                 }
             }

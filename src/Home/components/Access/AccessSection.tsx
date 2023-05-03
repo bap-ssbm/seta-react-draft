@@ -13,9 +13,13 @@ const AccessSection: FC<AccessSectionProps> = ({  }) => {
     return (
         <div className='grid place-content-center w-full my-10'>
             <div className='flex flex-col gap-10 items-center'>
-                <h1 className='text-[23px] italic underline tracking-[2px] text-center'>
+                <div className='w-full px-[5%]'>
+                <h1 className='text-[23px] italic tracking-[2px] text-center lg:text-start'>
                     Access
                 </h1>
+                <hr/>
+                </div>
+                
                 {i18n.language==="ja"? <img height={500} width={1000} alt='' src='/images/AO_Map.png' />: <img height={500} width={1000} alt='' src='/images/AO_Map_en.png' />}
                
                 <div className='flex gap-10 flex-col md:flex-row p-10 md:border'>

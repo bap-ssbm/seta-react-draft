@@ -12,10 +12,12 @@ const AboutSection: FC<AboutSectionProps> = ({ }) => {
   
     return (
         <div className=' w-full py-16 grid place-content-center '>
-
-            <h1 className='text-[23px] italic underline tracking-[2px] mb-5'>
+            <div>
+            <h1 className='text-[23px] italic tracking-[2px] mb-5'>
                 About The Chef
             </h1>
+            </div>
+            
             <div className='w-full flex gap-20 flex-col lg:flex-row mt-10'>
 
                 <div className='p-5 lg:p-20 h-fit bg-slate-300'>

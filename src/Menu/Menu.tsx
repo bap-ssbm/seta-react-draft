@@ -100,13 +100,13 @@ const Menu: FC<MenuProps> = ({ }) => {
             </div>
 
             <div className='absolute opacity-10 right-0 top-[40%]'>
-                <img height={700} width={700} className='' src='/images/１３.jpg' />
+                <img height={700} width={700} className='' alt='' src='/images/１３.jpg' />
             </div>
             <div className='absolute opacity-10 top-[13%]'>
-                <img height={700} width={700} className='' src='/images/3.jpg' />
+                <img height={700} width={700} className='' alt='' src='/images/3.jpg' />
             </div>
             <div className='absolute opacity-10 bottom-[13%]'>
-                <img height={700} width={700} className='' src='/images/8.jpg' />
+                <img height={700} width={700} className='' alt='' src='/images/8.jpg' />
             </div>
 
         </div>)
