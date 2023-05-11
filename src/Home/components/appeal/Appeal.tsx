@@ -16,7 +16,7 @@ const Appeal: FC<AppealProps> = ({ }) => {
                     {t('homePage.appeal.menu')}
                 </Button>
             </Link>
-            <Link to='/reservation' className='w-full max-w-[500px]'>
+            <Link to='/reserve' className='w-full max-w-[500px]'>
                 <Button addClass='w-full'>
                     {t('homePage.appeal.reservation')}
                 </Button>
