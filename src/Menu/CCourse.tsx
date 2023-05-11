@@ -6,7 +6,7 @@ interface CCourseProps {
 
 const CCourse: FC<CCourseProps> = ({}) => {
   return (
-    <div id='ccourse' className='flex-grow flex flex-col gap-8'>
+    <div id='ccourse' className='flex-grow flex flex-col gap-8 py-20'>
             <div>
                 <h2 className='underline font-bold'>
                     C コース
