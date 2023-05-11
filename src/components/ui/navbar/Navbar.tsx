@@ -1,10 +1,11 @@
 
-import { FC, useEffect, useState } from 'react'
+import { FC, useState } from 'react'
 import { AnimatePresence, motion } from "framer-motion"
 import NavMenu from './NavMenu'
 import Hamburg from './Hamburg'
 import MobileMenu from './MobileMenu'
 import Call from './Call'
+import { Link } from 'react-router-dom'
 
 
 
@@ -25,13 +26,13 @@ const Navbar: FC<NavbarProps> = ({ }) => {
                 <Call />
             </div>
 
-            <motion.div
-
-                className=' '>
+            <Link
+                to='/'
+                className='max-w-[60%]'>
                 <motion.img
 
                     src='/images/logo.png' />
-            </motion.div>
+            </Link>
 
             <NavMenu />
             <Hamburg openMenu={openMenu} setOpenMenu={setOpenMenu} />
