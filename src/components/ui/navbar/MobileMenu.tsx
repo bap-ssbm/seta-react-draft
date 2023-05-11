@@ -14,7 +14,7 @@ const MobileMenu: FC<MobileMenuProps> = ({ setOpenMenu }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.8, ease: 'easeInOut' } }}
             exit={{ opacity: 0 }}
-            className='w-screen h-screen lg:hidden absolute top-0 left-0 bg-white '>
+            className='w-screen h-screen lg:hidden fixed top-0 left-0 bg-white '>
             <ul className='flex w-full  gap-5 text-[18px] justify-evenly pt-28 px-[5%] flex-col'>
                 <li onClick={()=>{setOpenMenu(false)}} className='relative underline-hover-effect'>
                     <Link to="/">
