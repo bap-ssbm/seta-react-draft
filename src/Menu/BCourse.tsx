@@ -6,7 +6,7 @@ interface BCourseProps {
 
 const BCourse: FC<BCourseProps> = ({ }) => {
     return (
-        <div id='bcourse' className='flex-grow flex flex-col gap-8 py-20'>
+        <div id='bcourse' className='flex-grow flex flex-col gap-8 py-16'>
             <div>
                 <h2 className='underline font-bold'>
                     B コース

@@ -6,7 +6,7 @@ interface ConceptNavProps {
 
 const MenuNav: FC<ConceptNavProps> = ({ }) => {
     return (
-        <div className='border-b  md:border-r md:border-b-0 pr-4 md:pr-20 py-10 md:pt-20 md:mt-20 '>
+        <div className='border-b  md:border-r md:border-b-0 pr-4 md:pr-20 py-10 md:pt-20  '>
             <ul className='flex flex-col gap-4 md:gap-10 md:sticky md:top-36 h-fit text-center items-center md:items-start md:text-start'>
                 <li>
                     <a className='hover:underline' href='#lunch'>

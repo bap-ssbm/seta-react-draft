@@ -6,7 +6,7 @@ interface LunchProps {
 
 const Lunch: FC<LunchProps> = ({ }) => {
     return (
-        <div id='lunch' className='flex-grow flex flex-col gap-8 py-20'>
+        <div id='lunch' className='flex-grow flex flex-col gap-8 py-16'>
             <div>
                 <h2 className='underline font-bold'>
                     ランチコース（ランチタイムのみ）

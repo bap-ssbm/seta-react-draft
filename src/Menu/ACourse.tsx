@@ -6,7 +6,7 @@ interface ACourseProps {
 
 const ACourse: FC<ACourseProps> = ({ }) => {
     return (
-        <div id='acourse' className='flex-grow flex flex-col gap-8 py-20'>
+        <div id='acourse' className='flex-grow flex flex-col gap-8 py-16'>
             <div>
                 <h2 className='underline font-bold'>
                     A コース
