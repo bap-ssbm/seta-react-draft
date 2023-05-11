@@ -6,7 +6,7 @@ interface BCourseProps {
 
 const BCourse: FC<BCourseProps> = ({ }) => {
     return (
-        <div id='bcourse' className='flex-grow flex flex-col gap-8 py-16'>
+        <div id='bcourse' className='flex-grow flex flex-col gap-8 py-16 items-center'>
             <div>
                 <h2 className='underline font-bold'>
                     B コース
@@ -27,10 +27,10 @@ const BCourse: FC<BCourseProps> = ({ }) => {
                 季節のスープ
             </p>
             <div>
-                <p>
+                <p className='mb-5'>
                     メイン お選び（以下 3 点からお選びください）
                 </p>
-                <ul>
+                <ul className='w-fit'>
                     <li>
                         ・ 季節のお魚のポワレ
                     </li>
@@ -46,10 +46,10 @@ const BCourse: FC<BCourseProps> = ({ }) => {
                 ＊信州安曇野そば （＋５５０円）
             </p>
             <div>
-                <p>
+                <p className='mb-5'>
                     デザートお選び（以下３点のいずれか）
                 </p>
-                <ul>
+                <ul className='text-start w-fit'>
                     <li>
                         ・ 小豆のババロア
                     </li>

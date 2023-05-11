@@ -6,7 +6,7 @@ interface LunchProps {
 
 const Lunch: FC<LunchProps> = ({ }) => {
     return (
-        <div id='lunch' className='flex-grow flex flex-col gap-8 py-16'>
+        <div id='lunch' className='flex-grow flex flex-col gap-8 py-16 items-center'>
             <div>
                 <h2 className='underline font-bold'>
                     ランチコース（ランチタイムのみ）
@@ -20,11 +20,11 @@ const Lunch: FC<LunchProps> = ({ }) => {
             <p>
                 季節のスープ ＆ ミニサラダ
             </p>
-            <div>
-                <p>
+            <div className='items-center flex flex-col w-fit'>
+                <p className='mb-5'>
                     メイン料理 お選び（以下３点からお選びください）
                 </p>
-                <ul>
+                <ul className='text-start w-fit'>
                     <li>
                         ・ 季節のお魚料理
                     </li>
@@ -44,14 +44,15 @@ const Lunch: FC<LunchProps> = ({ }) => {
                     </li>
                 </ul>
             </div>
-            <div>
-                <p>
+            <hr className='border-dashed w-full'/>
+            <div className='flex flex-col items-center'>
+                <p >
                     ＊プラス￥450 でコースのデザートに変更できます。
                 </p>
-                <p>
+                <p className='mb-5'>
                     （下記からひとつお選びください）
                 </p>
-                <ul>
+                <ul className='text-start mb-5 w-fit'>
                     <li>
                         ・ 小豆のババロア
                     </li>
@@ -66,7 +67,7 @@ const Lunch: FC<LunchProps> = ({ }) => {
                     コースデザートと飲み物のセット・・・￥650
                 </p>
             </div>
-
+            <hr className='border-dashed w-full' />
 
             <p>
                 信州安曇野そば・・・¥550

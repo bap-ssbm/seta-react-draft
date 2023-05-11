@@ -6,7 +6,7 @@ interface ACourseProps {
 
 const ACourse: FC<ACourseProps> = ({ }) => {
     return (
-        <div id='acourse' className='flex-grow flex flex-col gap-8 py-16'>
+        <div id='acourse' className='flex-grow flex flex-col gap-8 py-16 items-center'>
             <div>
                 <h2 className='underline font-bold'>
                     A コース
@@ -24,10 +24,10 @@ const ACourse: FC<ACourseProps> = ({ }) => {
                 前菜：本日の魚介のマリネ レムドレソース
             </p>
             <div>
-                <p>
+                <p className='mb-5'>
                     メイン お選び（以下 2 点からお選びください）
                 </p>
-                <ul>
+                <ul className='text-start w-fit'>
                     <li>
                         ・ 季節のお魚のポワレ
                     </li>
@@ -40,10 +40,10 @@ const ACourse: FC<ACourseProps> = ({ }) => {
                 ＊信州安曇野そば （＋５５０円）
             </p>
             <div>
-                <p>
+                <p className='mb-5'>
                     デザートお選び（以下３点のいずれか）
                 </p>
-                <ul>
+                <ul className='text-start w-fit'>
                     <li>
                         ・ 小豆のババロア
                     </li>

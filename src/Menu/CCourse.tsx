@@ -6,7 +6,7 @@ interface CCourseProps {
 
 const CCourse: FC<CCourseProps> = ({}) => {
   return (
-    <div id='ccourse' className='flex-grow flex flex-col gap-8 py-16'>
+    <div id='ccourse' className='flex-grow flex flex-col gap-8 py-16 items-center'>
             <div>
                 <h2 className='underline font-bold'>
                     C コース
@@ -42,11 +42,11 @@ const CCourse: FC<CCourseProps> = ({}) => {
             <p>
                 信州安曇野そば
             </p>
-            <div>
+            <div className='w-fit flex flex-col items-center'>
                 <p>
                     デザートお選び（以下３点のいずれか）
                 </p>
-                <ul>
+                <ul className='text-start w-fit'>
                     <li>
                         ・ 小豆のババロア
                     </li>
