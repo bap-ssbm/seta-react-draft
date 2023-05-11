@@ -31,14 +31,8 @@ const MobileMenu: FC<MobileMenuProps> = ({ setOpenMenu }) => {
                  
                 </li>
                 <li  onClick={()=>{setOpenMenu(false)}} className='relative underline-hover-effect '>
-                    <Link to="/chef">
-                        {t('navbar.about')}
-                    </Link>
-                 
-                </li>
-                <li  onClick={()=>{setOpenMenu(false)}} className='relative underline-hover-effect '>
-                    <Link to="/chef">
-                        {t('navbar.about')}
+                    <Link to="/concept">
+                        {t('navbar.concept')}
                     </Link>
                  
                 </li>
@@ -49,6 +43,13 @@ const MobileMenu: FC<MobileMenuProps> = ({ setOpenMenu }) => {
                     </Link>
                   
                 </li>
+                <li  onClick={()=>{setOpenMenu(false)}} className='relative underline-hover-effect '>
+                    <Link to="/chef">
+                        {t('navbar.about')}
+                    </Link>
+                 
+                </li>
+               
                 <li onClick={()=>{setOpenMenu(false)}} className='relative underline-hover-effect'>
                     <Link to="/access">
                         {t('navbar.access')}
