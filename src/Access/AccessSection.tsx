@@ -32,13 +32,13 @@ const AccessSection: FC<AccessSectionProps> = ({  }) => {
                             </div>
                             
                             <a href='https://www.google.com/maps/place/HAYAMA+%E3%81%9B%E3%81%9F%E4%BA%AD/@35.2782653,139.5714886,17z/data=!3m1!4b1!4m6!3m5!1s0x601846fe07cb3531:0xf8b03366ea9f1814!8m2!3d35.2782653!4d139.5736773!16s%2Fg%2F11bv1m_fqx?hl=en'>
-                                <Button addClass='w-full flex gap-2 items-center justify-center'>
+                                <button className='w-full flex gap-2 items-center justify-center bg-blue-950 text-white py-4 hover:opacity-60 duration-300'>
                                     <BiMap />Google Maps
-                                </Button>
+                                </button>
                             </a>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-10'>
+                    <div className='flex flex-col gap-10 '>
                         <div className='max-w-[800px]'>
                             <p className='font-bold mb-2 underline text-blue-950'>
                             {t('homePage.access.busTitle')}

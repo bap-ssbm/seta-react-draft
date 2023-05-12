@@ -1,80 +1,129 @@
 {
     "en": {
+        "pdf": "Menu PDF",
         "warning":"(incl. tax, no service charge)",
+        "basic":{
+            "soba":"Shinshu Azumino Soba",
+            "chooseMain":"Choosing a Main Dish",
+            "chooseFrom3":"(Choose from the 3 choices below)",
+            "choose3":"(Choose from the 3 choices below)",
+            "choose2":"(Choose from the 2 choices bdlow)",
+            "cake1":"Bavarois au haricot adzuki (red bean)",
+            "cake2":"Gâteau au chocolat",
+            "cake3":"Mascarpone cheese mouse",
+            "plus550":"(+550 yen)"
+        },
         "course":{
             "amuse" : "Amusement",
             "dessert" :"Dessert  (a choice from 3)",
-            "drink":"Coffee or Tea"
+            "appetizer":"Appetizer: Seafood Marinade with remudore sauce",
+            "drink":"Coffee/Tea"
         },
         "a" : {
             "title": "A Course",
             "price" :"3,200 Yen",
             "appetizer":"Appetizer (Seafood Marinade)",
-            "main":"Today's Seafood or Grilled Pork Loin"
+            "main1":"Seasonal Fish Poiret",
+            "main2":"Grilled pork loin with mustard miso sauce"
         },
         "b" : {
             "title": "B Course",
             "price" :"4,300 Yen",
             "appetizer":"Appetizer (Seafood Marinade)",
             "soup":"Seasonal Soup",
-            "main":"Today's Seafood or Stewed Beef Cheek in Red Wine source"
+            "main1":"Seasonal Fish Poiret",
+            "main2":"Stewed Beef Cheek in Red Wine sauce",
+            "main3":"Wagyu Beef Filet Steak (+1800 yen)"
         },
         "c" : {
             "title": "C Course",
             "price" :"6,400 Yen",
             "appetizer":"Appetizer (Seafood Marinade)",
             "soup":"Seasonal Soup",
-            "seafood":"Today's Seafood",
-            "main":"Beef Cheek Bourguignon or Wagyu Beef Filet Steak (option +1,880)",
-            "soba":"Shinshu Azumino Soba"
+            "main1":"Fish Dish: Seasonal Fish Poiret",
+            "main2":"Meat Dish: Stewed Beef Cheek in Red Wine sauce",
+            "or":"or",
+            "main3":"Wagyu Beef Filet Steak (+1800 yen)"
+            
         },
         "lunch" : {
             "title": "Lunch Set",
-            "price" :"1,800 Yen",
-            "salad":"Mini Salad",
-            "soup":"Cup Soup",
+            "titleEtc" :"( Only during Lunch Time )",
+            "soupAndSalad":"Seasonal Soup & mini Salad",
             "mainTitle":"Main Dish Selection",
-            "main":"(Cabbage Rolls Gratin with Tomato source, Today's Seafood, Cream stewed Chiken and Mashroom)/Seasonal Sorbet)",
-            "sorbet":"Seasonal Sorbet"
+            "main1":"Today's Seafood",
+            "main2":"Cream stewed Chicken and Mushroom",
+            "main3":"Cabbage Rolls Gratin with Tomato source",
+            "main3Title":"Popular and original Seta-tei dish",
+            "sourbet":"Seasonal Sorbet",
+            "dessertTitle":"dessert can be upgraded with +￥450 ",
+            "dessertChoose":"( Choose one from below )",
+            "dessertAndDrink":"Course dessert and drink set",
+            "drinks":"Coffee, Black Tea, Herb Tea"
         }
     },
     "ja": {
+        "pdf":"メニュー PDF",
         "warning":"(税込、サービス料なし）",
+        "basic":{
+            "soba":"信州安曇野そば",
+            "chooseMain":"メイン料理 お選び",
+            "chooseFrom3":"（以下３点からお選びください）",
+            "choose3":"（以下３点のいずれか）",
+            "choose2":"（以下 2 点からお選びください）",
+            "cake1":"小豆のババロア",
+            "cake2":"ガトーショコラ",
+            "cake3":"マスカルポーネチーズのムース",
+            "plus550":"（＋５５０円）"
+        },
         "course":{
             "amuse" : "一口オードブル",
-            "dessert" :"デザート（３種類からお選び）",
-            "drink":"コーヒーまたは紅茶"
+            "dessert" :"デザートお選び（以下３点のいずれか）",
+            "appetizer":"前菜：本日の魚介のマリネ レムドレソース",
+            "drink":"コーヒー/紅茶"
         },
         "a" : {
             "title": "A コース",
             "price" :"3,200円",
             "appetizer":"前菜（魚介のマリネ）",
-            "main":"本日の魚料理 または 豚ロース肉グリル"
+            "main1":"季節のお魚のポワレ",
+            "main2":"ロース肉のグリル マスタード味噌ソース"
         },
         "b" : {
             "title": "B コース",
             "price" :"4,300円",
             "appetizer":"前菜（魚介のマリネ）",
             "soup":"季節のスープ",
-            "main":"本日の魚料理 または 牛ホホ肉の赤ワイン煮"
+            "main1":"季節のお魚のポワレ",
+            "main2":" 牛ほほ肉の赤ワイン煮",
+            "main3":"和牛ヒレ肉のステーキ ポルト酒のソース（＋１８００円）"
+
         },
         "c" : {
             "title": "C コース",
             "price" :"6,400円",
             "appetizer":"前菜（魚介のマリネ）",
             "soup":"本日のスープ",
-            "seafood":"季節の魚料理",
-            "main":"肉料理（牛頬肉赤ワイン煮 または 和牛ヒレステーキ<+1,880円>",
-            "soba":"信州安曇野そば"
+            "main1":"魚料理：季節のお魚のポワレ",
+            "main2":"肉料理：牛ほほ肉の赤ワイン煮",
+            "or":"または",
+            "main3":"和牛ヒレ肉のステーキ ポルト酒のソース（＋１８００円）"
+            
         },
         "lunch" : {
             "title": "ランチセット",
-            "price" :"1,800円",
-            "salad":"季節野菜のミニサラダ",
-            "soup":"カップスープ",
+            "titleEtc" :"（ランチタイムのみ）",
+            "soupAndSalad":"季節のスープ ＆ ミニサラダ",
             "mainTitle":"メイン料理お選び",
-            "main":"（ロールキャベツのトマトソースグラタン・本日の魚料理・鶏肉のきのこクリーム煮）",
-            "sorbet":"季節のシャーベット"
+            "main1":"季節のお魚料理",
+            "main2":"モモ肉のきのこクリーム煮",
+            "main3":"ロールキャベツ トマトソースグラタン",
+            "main3Title":"人気のせた亭 オリジナルメニュー",
+            "sourbet":"季節のシャーベット",
+            "dessertTitle":"プラス￥450 でコースのデザートに変更できます。",
+            "dessertChoose":"（下記からひとつお選びください）",
+            "dessertAndDrink":"コースデザートと飲み物のセット",
+            "drinks":"コーヒー、紅茶、ハーブティー"
         }
     }
 }

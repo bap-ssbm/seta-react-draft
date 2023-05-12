@@ -1,15 +1,17 @@
 import { FC } from 'react'
+import { useTranslation } from 'react-i18next'
 
 interface LunchProps {
 
 }
 
 const Lunch: FC<LunchProps> = ({ }) => {
+    const { t } = useTranslation()
     return (
         <div id='lunch' className='flex-grow flex flex-col gap-8 pb-16 items-center'>
             <div>
                 <h2 className='underline font-bold'>
-                    ランチコース（ランチタイムのみ）
+                    {t('menu.lunch.title')} {t('menu.lunch.titleEtc')}
                 </h2>
                 <p className='underline font-bold'>
                     ¥1,800
@@ -18,64 +20,67 @@ const Lunch: FC<LunchProps> = ({ }) => {
 
 
             <p>
-                季節のスープ ＆ ミニサラダ
+                {t('menu.lunch.soupAndSalad')}
             </p>
             <div className='items-center flex flex-col w-fit'>
                 <p className='mb-5'>
-                    メイン料理 お選び（以下３点からお選びください）
+                    {t('menu.basic.chooseMain')}{t('menu.basic.chooseFrom3')}
                 </p>
-                <ul className='text-start w-fit'>
+                <ul className='text-start w-fit flex flex-col gap-3'>
                     <li>
-                        ・ 季節のお魚料理
+                        ・ {t('menu.lunch.main1')}
                     </li>
                     <li>
-                        ・ モモ肉のきのこクリーム煮
+                        ・ {t('menu.lunch.main2')}
                     </li>
                     <li>
                         <div>
-                            <p>
-                                人気のせた亭 オリジナルメニュー
+                            <p className='italic'>
+                            {t('menu.lunch.main3Title')}
                             </p>
                             <p>
-                                ・  ロールキャベツ トマトソースグラタン
+                                ・  {t('menu.lunch.main3')}
                             </p>
                         </div>
 
                     </li>
                 </ul>
             </div>
-            <hr className='border-dashed w-full'/>
+            <p>
+            {t('menu.lunch.sourbet')}
+            </p>
+            <hr className='border-dashed w-full' />
             <div className='flex flex-col items-center'>
                 <p >
-                    ＊プラス￥450 でコースのデザートに変更できます。
+                    ＊{t('menu.lunch.dessertTitle')}
                 </p>
                 <p className='mb-5'>
-                    （下記からひとつお選びください）
+                {t('menu.lunch.dessertChoose')}
                 </p>
-                <ul className='text-start mb-5 w-fit'>
+                <ul className='text-start mb-5 w-fit flex flex-col gap-3'>
                     <li>
-                        ・ 小豆のババロア
+                        ・ {t('menu.basic.cake1')}
                     </li>
                     <li>
-                        ・ ガトーショコラ
+                        ・ {t('menu.basic.cake2')}
                     </li>
                     <li>
-                        ・ マスカルポーネチーズのムース
+                        ・ {t('menu.basic.cake3')}
                     </li>
                 </ul>
                 <p>
-                    コースデザートと飲み物のセット・・・￥650
+                {t('menu.lunch.dessertAndDrink')}・・・￥650
                 </p>
             </div>
             <hr className='border-dashed w-full' />
 
             <p>
-                信州安曇野そば・・・¥550
+            {t('menu.basic.soba')}・・・¥550
             </p>
 
 
             <p>
-                コーヒー、紅茶、ハーブティー・・・￥400
+            {t('menu.lunch.drinks')}・・・￥400
             </p>
         </div>
     )

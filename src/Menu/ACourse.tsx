@@ -1,15 +1,17 @@
 import { FC } from 'react'
+import { useTranslation } from 'react-i18next'
 
 interface ACourseProps {
 
 }
 
 const ACourse: FC<ACourseProps> = ({ }) => {
+    const { t } = useTranslation()
     return (
         <div id='acourse' className='flex-grow flex flex-col gap-8 py-16 items-center'>
             <div>
                 <h2 className='underline font-bold'>
-                    A コース
+                {t('menu.a.title')}
                 </h2>
                 <p className='underline font-bold'>
                     ¥3,200
@@ -18,45 +20,45 @@ const ACourse: FC<ACourseProps> = ({ }) => {
 
 
             <p>
-                一口オードブル
+            {t('menu.course.amuse')}
             </p>
             <p>
-                前菜：本日の魚介のマリネ レムドレソース
+            {t('menu.course.appetizer')}
             </p>
-            <div>
+            <div className='flex flex-col items-center '>
                 <p className='mb-5'>
-                    メイン お選び（以下 2 点からお選びください）
+                {t('menu.basic.chooseMain')} {t('menu.basic.choose2')}
                 </p>
-                <ul className='text-start w-fit'>
+                <ul className='text-start w-fit flex flex-col gap-3'>
                     <li>
-                        ・ 季節のお魚のポワレ
+                        ・ {t('menu.a.main1')}
                     </li>
                     <li>
-                        ・ 豚ロース肉のグリル マスタード味噌ソース
+                        ・ {t('menu.a.main2')}
                     </li>
                 </ul>
             </div>
             <p>
-                ＊信州安曇野そば （＋５５０円）
+                ＊{t('menu.basic.soba')} {t('menu.basic.plus550')}
             </p>
-            <div>
+            <div className='items-center flex flex-col'>
                 <p className='mb-5'>
-                    デザートお選び（以下３点のいずれか）
+                {t('menu.course.dessert')}
                 </p>
-                <ul className='text-start w-fit'>
+                <ul className='text-start w-fit  flex flex-col gap-3'>
                     <li>
-                        ・ 小豆のババロア
+                        ・ {t('menu.basic.cake1')}
                     </li>
                     <li>
-                        ・ ガトーショコラ
+                        ・ {t('menu.basic.cake2')}
                     </li>
                     <li>
-                        ・ マスカルポーネチーズのムース
+                        ・ {t('menu.basic.cake3')}
                     </li>
                 </ul>
             </div>
             <p>
-                コーヒー/紅茶
+            {t('menu.course.drink')}
             </p>
         </div>
     )

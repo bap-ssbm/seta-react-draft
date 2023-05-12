@@ -1,15 +1,17 @@
 import { FC } from 'react'
+import { useTranslation } from 'react-i18next'
 
 interface CCourseProps {
   
 }
 
 const CCourse: FC<CCourseProps> = ({}) => {
+    const { t } = useTranslation()
   return (
     <div id='ccourse' className='flex-grow flex flex-col gap-8 py-16 items-center'>
             <div>
                 <h2 className='underline font-bold'>
-                    C コース
+                {t('menu.c.title')}
                 </h2>
                 <p className='underline font-bold'>
                     ¥6,400
@@ -18,48 +20,48 @@ const CCourse: FC<CCourseProps> = ({}) => {
 
 
             <p>
-                一口オードブル
+            {t('menu.course.amuse')}
             </p>
             <p>
-                前菜：本日の魚介のマリネ レムドレソース
+            {t('menu.course.appetizer')}
             </p>
             <p>
-                季節のスープ
+            {t('menu.c.soup')}
             </p>
             <p>
-            料理：季節のお魚のポワレ 
+            {t('menu.c.main1')}
             </p>
             <div>
                 <p>
-                料理：季節のお魚のポワレ 
+                {t('menu.c.main2')}
                 <br/>
-                または
+                {t('menu.c.or')}
                 <br/>
-                和牛ヒレ肉のステーキ ポルト酒のソース（＋１８００円）
+                {t('menu.c.main3')}
                 </p>
             </div>
             
             <p>
-                信州安曇野そば
+            {t('menu.basic.soba')}
             </p>
-            <div className='w-fit flex flex-col items-center'>
-                <p>
-                    デザートお選び（以下３点のいずれか）
+            <div className='flex flex-col items-center'>
+                <p className='mb-5'>
+                {t('menu.course.dessert')}
                 </p>
-                <ul className='text-start w-fit'>
+                <ul className='text-start w-fit flex flex-col gap-3'>
                     <li>
-                        ・ 小豆のババロア
+                        ・ {t('menu.basic.cake1')}
                     </li>
                     <li>
-                        ・ ガトーショコラ
+                        ・ {t('menu.basic.cake2')}
                     </li>
                     <li>
-                        ・ マスカルポーネチーズのムース
+                        ・ {t('menu.basic.cake3')}
                     </li>
                 </ul>
             </div>
             <p>
-                コーヒー/紅茶
+            {t('menu.course.drink')}
             </p>
         </div>
   )

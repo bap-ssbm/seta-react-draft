@@ -4,6 +4,7 @@ import { FaPhoneAlt } from 'react-icons/fa'
 import { BsInstagram, BsFacebook } from 'react-icons/bs'
 import { useTranslation } from 'react-i18next'
 
+
 interface ReservationProps { }
 
 const Reservation: FC<ReservationProps> = ({ }) => {
@@ -17,13 +18,21 @@ const Reservation: FC<ReservationProps> = ({ }) => {
 
 
                 <div className=' flex flex-col  gap-5  bg-white rounded-md w-full items-center h-fit'>
+                <p className='text-[16px] font-semibold mt-5'>
+                    {t('homePage.reservation.button')}
+                    </p>
+                    <a href='tel:046-887-0099' className='mb-5'>
+                        <Button className='w-full text-[18px]'>
+                        <FaPhoneAlt /> 046-887-0099
+                        </Button>
+                    </a>
                     
                     <div className='w-full'>
                         {i18n.language === "ja" ? <img src='/images/date.png' alt='' /> : <img src='/images/timeenglish.jpg' alt='' />}
                     </div>
-                    <div className='flex flex-col md:flex-row gap-5'>
+                    <div className='flex flex-col  gap-5'>
 
-                        <p className='font-bold  text-center md:text-start md:whitespace-nowrap'>
+                        <p className='font-bold  text-center md:whitespace-nowrap text-[18px]'>
                             {t('homePage.reservation.timeTitle')}
                         </p>
                         <div>
@@ -35,17 +44,7 @@ const Reservation: FC<ReservationProps> = ({ }) => {
                             </p>
                         </div>
                     </div>
-
-                    <a href='tel:046-887-0099' className='w-full'>
-                        <Button addClass='w-full'>
-                            <p className='text-[14px]'>
-                                {t('homePage.reservation.button')}
-                            </p>
-                            <p className='text-[20px]'>
-                                046-887-0099
-                            </p>
-                        </Button>
-                    </a>
+                    
                     
 
                 </div>
@@ -55,21 +54,22 @@ const Reservation: FC<ReservationProps> = ({ }) => {
 
 
             </div>
-            <div className='flex flex-col gap-5 '>
+            <hr className='border-dashed w-full'/>
+            <div className='flex flex-col gap-5  px-[5%]'>
                 <div>
                     {t('homePage.reservation.warning')}
 
                 </div>
                 
-                <div className='flex gap-5 justify-center mt-4'>
-                    <a href='https://www.instagram.com/hayama_setatei/' className='flex-grow'>
-                        <Button addClass='flex justify-center items-center gap-3 w-full'>
+                <div className='flex gap-10 justify-center mt-4'>
+                    <a href='https://www.instagram.com/hayama_setatei/' className=''>
+                        <Button className='flex justify-center items-center gap-3 px-4'>
                             <BsInstagram style={{ display: 'inline-block' }} /> <span>Instagram</span>
                         </Button>
                     </a>
-                    <a href='https://www.facebook.com/hayamasetatei/' className='flex-grow'>
-                        <Button addClass='flex justify-center items-center gap-3 w-full'>
-                            <BsFacebook /><span>Facebook</span>
+                    <a href='https://www.facebook.com/hayamasetatei/' className=''>
+                        <Button className='flex gap-3 px-4'>
+                            <BsFacebook className='inline-block'/><div className='inline-block'>Facebook</div>
                         </Button>
                     </a>
                 </div>

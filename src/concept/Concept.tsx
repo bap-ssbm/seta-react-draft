@@ -25,8 +25,8 @@ const Concept: FC<ConceptProps> = ({}) => {
                     
 
                     <div className='md:w-[50%] w-full'>
-                        <Link to='/menu'>
-                        <Button addClass='w-fit px-10'>
+                        <Link className='w-fit' to='/menu'>
+                        <Button className='w-full px-10'>
                         {t('homePage.menu.button')}
                         </Button>
                         </Link>

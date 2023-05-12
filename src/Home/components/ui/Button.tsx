@@ -1,15 +1,22 @@
-import React, { FC } from 'react'
+import React, { FC, HtmlHTMLAttributes } from 'react'
 
-interface ButtonProps {
-  children: React.ReactNode,
-  addClass?: string
+interface ButtonProps extends HtmlHTMLAttributes<HTMLButtonElement> {
+  children: React.ReactNode
 }
 
-const Button: FC<ButtonProps> = ({ children, addClass }) => {
+const Button: FC<ButtonProps> = ({ children,  ...props }) => {
+
+  
   return (
 
-      <button className={(' hover:scale-95 font-semibold   py-3  border bg-blue-950 text-white duration-500  shadow-md ') + addClass}>
+      <button {...props} className={('font-semibold hover:scale-105 grid place-content-center relative duration-500 ') + props.className}>
+        
+        <div className='relative w-fit items-center justify-center gap-2 flex'>
         {children}
+        <img className='absolute bottom-[-5px] left-[-35px]' src='/images/underline-curve.png'/>
+        </div>
+        
+        
       </button>
  
 

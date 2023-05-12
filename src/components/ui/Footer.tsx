@@ -10,7 +10,7 @@ interface FooterProps {
 const Footer: FC<FooterProps> = ({ }) => {
     const { t } = useTranslation();
     return (
-        <footer className='py-10 border-t  gap-3 w-full flex justify-center flex-col text-center items-center text-slate-600'>
+        <footer className='py-10 border-t  gap-3 w-full flex justify-center flex-col text-center items-center '>
 
             
 
