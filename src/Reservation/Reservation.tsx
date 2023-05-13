@@ -21,10 +21,10 @@ const Reservation: FC<ReservationProps> = ({ }) => {
                 <p className='text-[16px] font-semibold mt-5'>
                     {t('homePage.reservation.button')}
                     </p>
-                    <a href='tel:046-887-0099' className='mb-5'>
-                        <Button className='w-full text-[18px]'>
+                    <a href='tel:046-887-0099' className='mb-5 flex gap-3 text-[18px] items-center border-b border-b-black font-semibold hover:scale-105 duration-300'>
+                        
                         <FaPhoneAlt /> 046-887-0099
-                        </Button>
+                       
                     </a>
                     
                     <div className='w-full'>
