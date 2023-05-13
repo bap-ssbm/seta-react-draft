@@ -30,12 +30,12 @@ const Reservation: FC<ReservationProps> = ({ }) => {
                     <div className='w-full'>
                         {i18n.language === "ja" ? <img src='/images/date.png' alt='' /> : <img src='/images/timeenglish.jpg' alt='' />}
                     </div>
-                    <div className='flex flex-col  gap-5'>
+                    <div className='flex flex-col  gap-5 text-[18px]'>
 
-                        <p className='font-bold  text-center md:whitespace-nowrap text-[18px]'>
+                        <p className='font-bold  text-center md:whitespace-nowrap '>
                             {t('homePage.reservation.timeTitle')}
                         </p>
-                        <div>
+                        <div className='text-[17px]'>
                             <p className=' md:whitespace-nowrap'>
                                 {t('homePage.reservation.lunch')}: 11:30〜13:30 (LO)
                             </p>
