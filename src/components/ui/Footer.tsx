@@ -15,7 +15,7 @@ const Footer: FC<FooterProps> = ({ }) => {
             
 
             <p>
-                〒240-0112 {t('homePage.access.address')}
+             {t('homePage.access.address')}
             </p>
 
 

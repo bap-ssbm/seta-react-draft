@@ -43,6 +43,15 @@ const NavMenu: FC<NavMenuProps> = ({ }) => {
                     </NavLink>
                     <div className='absolute bottom-0 left-0 w-full h-[2px] bg-blue-950 duration-500' />
                 </li>
+                <li className='relative underline-hover-effect '>
+                    <NavLink to="/chef"
+                    className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "border-b-[2px] border-blue-950" : ""}
+                    >
+                        {t('navbar.about')}
+                    </NavLink>
+                    <div className='absolute bottom-0 left-0 w-full h-[2px] bg-blue-950 duration-500' />
+                </li>
                 <li className='relative underline-hover-effect'>
                     <NavLink to="/reserve"
                     className={({ isActive, isPending }) =>
@@ -53,15 +62,7 @@ const NavMenu: FC<NavMenuProps> = ({ }) => {
                     </NavLink>
                     <div className='absolute bottom-0 left-0 w-full h-[2px] bg-blue-950 duration-500' />
                 </li>
-                <li className='relative underline-hover-effect '>
-                    <NavLink to="/chef"
-                    className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "border-b-[2px] border-blue-950" : ""}
-                    >
-                        {t('navbar.about')}
-                    </NavLink>
-                    <div className='absolute bottom-0 left-0 w-full h-[2px] bg-blue-950 duration-500' />
-                </li>
+               
                 <li className='relative underline-hover-effect'>
                     <NavLink to="/access"
                     className={({ isActive, isPending }) =>
