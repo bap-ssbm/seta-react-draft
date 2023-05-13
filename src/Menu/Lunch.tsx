@@ -10,7 +10,7 @@ const Lunch: FC<LunchProps> = ({ }) => {
     return (
         <div id='lunch' className='flex-grow flex flex-col gap-8 pb-16 items-center'>
             <div>
-                <h2 className='underline font-bold'>
+                <h2 className='underline font-bold space-x-2'>
                     {t('menu.lunch.title')} {t('menu.lunch.titleEtc')}
                 </h2>
                 <p className='underline font-bold'>
@@ -24,7 +24,7 @@ const Lunch: FC<LunchProps> = ({ }) => {
             </p>
             <div className='items-center flex flex-col w-fit'>
                 <p className='mb-5'>
-                    {t('menu.basic.chooseMain')}{t('menu.basic.chooseFrom3')}
+                    {t('menu.basic.chooseMain')} {t('menu.basic.chooseFrom3')}
                 </p>
                 <ul className='text-start w-fit flex flex-col gap-3'>
                     <li>

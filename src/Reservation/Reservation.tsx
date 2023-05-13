@@ -62,15 +62,15 @@ const Reservation: FC<ReservationProps> = ({ }) => {
                 </div>
                 
                 <div className='flex gap-10 justify-center mt-4'>
-                    <a href='https://www.instagram.com/hayama_setatei/' className=''>
-                        <Button className='flex justify-center items-center gap-3 px-4'>
+                    <a href='https://www.instagram.com/hayama_setatei/' className='flex justify-center items-center gap-3 px-4 hover:underline'>
+                    
                             <BsInstagram style={{ display: 'inline-block' }} /> <span>Instagram</span>
-                        </Button>
+                      
                     </a>
-                    <a href='https://www.facebook.com/hayamasetatei/' className=''>
-                        <Button className='flex gap-3 px-4'>
+                    <a href='https://www.facebook.com/hayamasetatei/' className='flex justify-center items-center gap-3 px-4 hover:underline'>
+                        
                             <BsFacebook className='inline-block'/><div className='inline-block'>Facebook</div>
-                        </Button>
+                       
                     </a>
                 </div>
             </div>
